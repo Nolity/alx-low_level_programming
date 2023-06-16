@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <unistd.h>
 /**
  * main - Program that prints a lineto a standard error
  * Return: 1
