@@ -1,20 +1,21 @@
 #include <stdio.h>
 /**
- * main - Program prints the size of various types
+ * main - Program prints the size of various cpu types
  * Return: 0
  */
 int main(void)
 {
-char one;
-int two;
-long int three;
-long long int four;
-float five;
-printf("Size of char size= %zu", sizeof(one));
-printf("\nSize of int size= %zu", sizeof(two));
-printf("\nSize of long int size= %zu", sizeof(three));
-printf("\nSize of long long int= %zu", sizeof(four));
-printf("\nSize of float= %zu", sizeof(five));
+char a;
+int b;
+long int c;
+long long int d;
+float e;
+
+printf("Size of char size= %zu", sizeof(a));
+printf("\nSize of int size= %zu", sizeof(b));
+printf("\nSize of long int size= %zu", sizeof(c));
+printf("\nSize of long long int= %zu", sizeof(d));
+printf("\nSize of float= %zu", sizeof(e));
 
 return (0);
 }
