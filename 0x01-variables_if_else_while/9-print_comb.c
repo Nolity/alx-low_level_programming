@@ -9,7 +9,7 @@ int main(void)
 for (n = 0; n < 10; n++)
 {
 /*if condition is true put the following*/
-	putchar(a + '0');
+	putchar(n + '0');
 if (n < 9)
 {
 /*if condition is true put the following*/
