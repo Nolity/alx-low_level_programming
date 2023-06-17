@@ -8,11 +8,11 @@ int main(void)
 {
 char ch = 'a';
 char c = 'A';
-for (ch = 'a'; ch < = 'z'; ch++)
+for (ch = 'a'; ch <= 'z'; ch++)
 {/* if condition true put the following"*/
 	putchar(ch);
 }
-for (c = 'A'; c < = 'Z'; c++)
+for (c = 'A'; c <= 'Z'; c++)
 {/* if condition true put the following"*/
 	putchar(c);
 }
