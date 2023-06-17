@@ -9,7 +9,8 @@ int main(void)
 char ch = 'a';
 for (ch = 'a'; ch <= 'z'; ch++)
 	/* if condition true put the following*/
-putchar(ch);
-putchar('\n';
+	putchar(ch);
+{putchar('\n';
+}
 return (0);
 }
