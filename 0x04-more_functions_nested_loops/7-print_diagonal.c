@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
@@ -7,27 +6,25 @@
  * Return: nothing
  */
 
-void print_diagonal(int n)
+void print_diagonal(int size, char n)
 {
-	int len, space;
+	int a, b;
 
-	if (n > 0)
+	if (n <= 0)
 	{
-		for (len = 0; len < n; len++)
+		_putchar('\n');
+	}
+	else
+	{
+		for (a = 0; a < n; a++)
 		{
-			for (space = 0; space < len; space++)
+			for (b = 0; b < a; b++)
 			{
-				_putchar(' ');
+			_putchar(32);
 			}
-			
-			_putchar('\\');
-			
-			if (len == (n - 1))
-			{
-				continue;
-			}
+			_putchar(92);
 			_putchar('\n');
 		}
 	}
-	_putchar('\n');
+
 }
