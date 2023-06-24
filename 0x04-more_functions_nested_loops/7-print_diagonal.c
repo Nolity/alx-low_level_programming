@@ -7,7 +7,7 @@
  * Return: nothing
  */
 
-void print_diagonal(int n);
+void print_diagonal(int n)
 {
 	int len, space;
 
@@ -19,9 +19,9 @@ void print_diagonal(int n);
 			{
 				_putchar(' ');
 			}
-
-			-putchar('\\');
-
+			
+			_putchar('\\');
+			
 			if (len == (n - 1))
 			{
 				continue;
