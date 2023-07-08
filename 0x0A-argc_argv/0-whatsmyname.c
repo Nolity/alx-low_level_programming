@@ -1,23 +1,24 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
- * main - A program that prints its own name.
- * @argc: Number of command-line arguments.
- * @argv: Array of command-line arguments.
+ * main - Entry point
+ * @argc: The number of command line arguments
+ * @argv: An array containing the command line arguments
+ *
  * Return: 0 on success
  */
-
 int main(int argc, char *argv[])
 {
 	int i;
 
-	/* Loop through each character of argv[0] and print it */
-	for (i = 0; argv[0][i] != '\0'; i++)
+	for (i = 0; i < argc; i++)
 	{
-		putchar(argv[0][i]);
+		/* Print each command line argument */
+		for (int j = 0; argv[i][j] != '\0'; j++)
+			_putchar(argv[i][j]);
+		_putchar('\n');
 	}
-
-	putchar('\n');
 
 	return (0);
 }
