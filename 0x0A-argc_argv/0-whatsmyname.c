@@ -8,17 +8,9 @@
  *
  * Return: 0 on success
  */
-int main(int argc, char *argv[])
+int main(int argc __attribute__((unused)), char *argv[])
 {
-	int i;
-
-	for (i = 0; i < argc; i++)
-	{
-		/* Print each command line argument */
-		for (int j = 0; argv[i][j] != '\0'; j++)
-			_putchar(argv[i][j]);
-		_putchar('\n');
-	}
+	printf("%s\n", *argv);
 
 	return (0);
 }
